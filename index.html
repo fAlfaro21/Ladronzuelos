@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ladronzuelos de bicicletas</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        input:focus {
+          background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>ladronzuelos de bicicletas</h1><br>
+    <p>Se sospecha que el club está viviendo una 5ª juventud y se están presentando algunas desapariciones de bicicletas. Si has perdido la tuya, regístrala a continuación para que podamos ayudar a encontrarla.</p>
+    <h2>Formulario de denuncia de pérdida</h2>
+    <p>A continuación describe los detalles de la bicicleta:</p>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post">
+    <fieldset>
+        <legend>Datos de la bicicleta</legend>
+        <table>
+            <tr>
+                <td><label for="ladronzuelosDate">Día</label>:</td>
+                <td><input type="date" name="ladronzuelosDate" id="ladronzuelosDate" tabindex="1"><br></td>
+            </tr>
+            <tr>
+                <td><label for="ladronzuelosTime">Hora</label>:</td>
+                <td><input type="time" name="ladronzuelosTime" id="ladronzuelosTime" tabindex="2"><br></td>
+            </tr>
+            <tr>
+                <td><label for="ladronzuelosColor">Color</label>:</td>
+                <td><input type="color" name="ladronzuelosColor" id="ladronzuelosColor"></td>
+            </tr>
+            <tr>
+                <td><label for="ladronzuelosPriceRange">Rango de precio (de 50€ a 10,000€)</label>:</td>
+                <td><input type="range" name="ladronzuelosPriceRange" id="ladronzuelosPriceRange" min="0" max="10000"></td>
+            </tr>
+            <tr>
+                <td><label for="ladronzuelosTBike">Tipo de bicicleta</label>:</td>
+                <td><select name="ladronzuelosTBike" id="ladronzuelosTBike">
+                      <optgroup label="Paseo">
+                        <option value="senorial">Señorial</option>
+                        <option value="antiPlebeyos">Anti-plebeyos</option>
+                        <option value="porEncimaDelHombro">Por encima del hombro</option>
+                      </optgroup>
+                      <optgroup label="Montaña">
+                        <option value="gamusinos">Gamusinos</option>
+                        <option value="huelefloresPremium">Huele flores premium</option>
+                        <option value="fangolover">Fango lover</option>
+                      </optgroup>
+                      <optgroup label="Carreras">
+                        <option value="metroYmedio">Metro y medio</option>
+                        <option value="fluorescente">3 de la tarde. Fluorescente edition</option>
+                        <option value="grupitors">Grupitors</option>
+                      </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="ladronzuelosAcc">Selecciona los accesorios</label>:</td>
+                <td><select name="ladronzuelosAcc" id="ladronzuelosAcc" multiple>
+                      <option value="ruedines">Ruedines</option>
+                      <option value="pegatinas">Pegatinas</option>
+                      <option value="cestita">Cestita</option>
+                      <option value="bombaDeAire">Bomba de aire</option>
+                      <option value="timbre">Timbre</option>
+                      <option value="foco">Foco</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><small>Presione Ctrl (windows) o Command (Mac)</small></td>
+                <td><small>para seleccionar varios valores.</small></td>
+            </tr>
+            <tr>
+                <td><label for="ladronzuelosTrade">¿Qué marca era?</label>:</td>
+                <td><select name="ladronzuelosTrade" id="ladronzuelosTrade">
+                    <option value="">--Selecciona la marca--</option>
+                    <option value="specialized">Specialized</option>
+                    <option value="trek">Trek</option>
+                    <option value="merida">Merida</option>
+                    <option value="scott">Scott</option>
+                    <option value="giant">Giant</option>
+                    <option value="cube">Cube</option>
+                </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <input type="submit" value="Enviar datos">
+    <input type="reset" value="Cancelar">
+
+    
+
+    <!-- Muestra un campo en el que, de acuerdo a la letra que escribas, te sugiere una lista de valores (del conjunto de valores que hayas configurado):
+        
+        <label for="biciBrand">Marca:</label>
+        <input type="text" list="biciMarca" id="biciBrand">
+
+        <datalist id="biciMarca">
+        <option value="specialized">
+        <option value="trek">
+        <option value="merida">
+        <option value="scott">
+        <option value="giant">
+        <option value="cube">
+        <option value="lapierre">
+        <option value="orbea">
+        <option value="cannondale">
+        <option value="bmc">
+        <option value="canyon">
+        <option value="look">
+        <option value="protek">
+        <option value="scott">
+        <option value="megamo">
+        <option value="pinarello">
+        <option value="bianchi">
+        <option value="bh">
+        <option value="factor">
+        <option value="ghost">
+        <option value="cervélo">
+        <option value="argo">
+    </datalist> -->
+
+    <!-- Muestra una lista con 3 valores () y cada uno de ellos con sus subvalores.
+    <label for="tipo">Tipo de bicicleta</label><br>
+    <ol>
+        <li>Paseo</li>
+        <input type="radio" id="senorial" name="tipo" value="senorial">
+        <label for="senorial">Señorial</label><br>
+        <input type="radio" id="antiplebeyos" name="tipo" value="antiplebeyos">
+        <label for="antiplebeyos">Anti-plebeyos</label><br>
+        <input type="radio" id="porencimadelhombro" name="tipo" value="porencimadel hombro">
+        <label for="porencimadelhombro">Por encima del hombro</label>
+        <li>Montaña</li>
+        <input type="radio" id="gamusinos" name="tipo" value="gamusinos">
+        <label for="gamusinos">Gamusinos</label><br>
+        <input type="radio" id="hueleflorespremium" name="tipo" value="hueleflorespremium">
+        <label for="hueleflorespremium">Hueleflores premium</label><br>
+        <input type="radio" id="fangolover" name="tipo" value="fangolover">
+        <label for="fangolover">Fango lover</label><br>
+        <li>Carreras</li>
+        <input type="radio" id="metroymedio" name="tipo" value="metroymedio">
+        <label for="metroymedio">Metro y medio</label><br>
+        <input type="radio" id="fluorescenteedition" name="tipo" value="fluorescenteedition">
+        <label for="fluorescenteedition">3pm. Fluorescente Edition</label><br>
+        <input type="radio" id="grupitors" name="tipo" value="grupitors">
+        <label for="grupitors">Grupitors</label><br>
+    </ol> -->
+
+</form>
+</body>
+</html>
